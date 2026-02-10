@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Photo Gallery</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CSS GRID */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ITEM */
+.item {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* IMAGE */
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* OVERLAY */
+.item::after {
+  content: "Hover Me";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.item:hover::after {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Responsive Photo Gallery</h1>
+
+<div class="gallery" id="gallery"></div>
+
+<script>
+const gallery = document.getElementById("gallery");
+
+const images = [
+  "https://picsum.photos/600/400?1",
+  "https://picsum.photos/600/400?2",
+  "https://picsum.photos/600/400?3",
+  "https://picsum.photos/600/400?4",
+  "https://picsum.photos/600/400?5",
+  "https://picsum.photos/600/400?6"
+];
+
+images.forEach(src => {
+  const div = document.createElement("div");
+  div.className = "item";
+
+  const img = document.createElement("img");
+  img.src = src;
+
+  div.appendChild(img);
+  gallery.appendChild(div);
+});
+</script>
+
+</body>
+</html>
