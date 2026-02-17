@@ -1,0 +1,23 @@
+.gallery-img { 
+  height: 250px; 
+  object-fit: cover; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #111;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+footer a:hover {
+  color: white;
+}
