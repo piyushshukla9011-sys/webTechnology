@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome </h1>
+    <h1>SE</h1>
+    <script>
+        console.log("Hello World");
+        document.write("<h1>Hello World</h1>");
+        // /*
+        // Multi Line
+        // Comment
+        // */
+        // // Variable is a container to store the data value
+        var number1 = 10;
+        var number2 = 20;
+
+        // // Data Types
+        // // 1. Numbers
+        // // 2. String
+        // // 3. objects
+        // // Numbers
+        var a = 10;
+        var b = 10.10;
+        console.log(a, b);
+        console.log("The value of a:", a);
+
+        // // String
+        var str1 = "This is a string";
+        var str2 = 'This is one more string';
+
+        console.log(str1, str2);
+
+        // // Objects
+        var marks = {
+            yogesh: 90,
+            mahesh: 80,
+            ramesh: 75
+        }
+        console.log(marks);
+
+        // // Primitive Data types
+        // // undefined, null, number, string, boolean, symbol
+
+        // // boolean
+        var b1 = false;
+        console.log(b1);
+        // // Reference data type
+        // // Array, object
+
+        var arr = [1, 2, 3, 4, 5];
+        console.log(arr);
+        document.write("<h1>Array: " + arr + "</h1>");
+
+        // // Operators
+        // // 1. Arithmetic
+        var a = 10;
+        var b = 20;
+        console.log("Addition is ", a + b);
+        console.log("a - b = ", a - b);
+        console.log("a * b = ", a * b);
+        console.log("a / b = ", a / b);
+        document.write("<h1>Addition is " + (a + b) + "</h1>");
+        // // 2. Assignment
+        var c = b;
+        c += 2;
+        console.log(c);
+
+        // // 3. Comparison
+
+        // console.log(a == b);
+        // console.log(a >= b);
+        // console.log(a <= b);
+        // console.log(a > b);
+        // console.log(a < b);
+
+        // // 4. Logical
+        // // Logical AND
+        // console.log(true && true);
+        // console.log(true && false);
+        // console.log(false && true);
+        // console.log(false && false);
+
+        // //Logical OR
+        // console.log(true || true);
+        // console.log(true || false);
+        // console.log(false || true);
+        // console.log(false || false);
+
+        // // 5. bitwise
+        // // 6. Logical NOT
+        // console.log(!false);
+        // console.log(!true);
+
+        console.log(avg(a, b));
+        // //functions to find average of 2 numbers
+        function avg(a, b) {
+            c = (a + b) / 2;
+            return c;
+        }
+
+        var a1 = avg(4, 6);
+        var a2 = avg(11, 13);
+        console.log(a1, a2);
+
+        // // DRY = Do not repeat yourself
+
+        // // Conditional statements
+
+        // // 1. if
+        // // 2. if-else
+        // // 3. if-else ladder
+        // // 4. loops
+        // //     4.1 for
+        // //     4.2 while
+        // //     4.3 do-- while
+        let age = 9;
+
+        // if-else
+        if (age <= 20) {
+            console.log("you are child");
+        }
+        else {
+            console.log("you are adult");
+        }
+
+        // age = 15;
+        // // if-else ladder
+        // if(age < 10)
+        // {
+        //     console.log("you are child");
+        // }
+        // else if(age < 20)
+        // {
+        //     console.log("you are teen ager");
+        // }
+        // else
+        // {
+        //     console.log("you are adult");
+        // }
+
+        // // Loops
+
+        // var arr=[1,2,3,"Yogesh",5,6]
+        // // console.log(arr[3]);
+
+        // // for loop
+        // // for(var i = 0;i<arr.length; i++){
+        // //     console.log(arr[i]);
+        // // }
+
+        // // DOM - foreach loop
+        // // arr.forEach(function(element){
+        // //     console.log(element);
+        // // })
+
+        // // Declaration of variables
+        // // let j = 0;
+        // while(j<arr.length)
+        // {
+        //     console.log(arr[j]);
+        //     j++;
+        // }
+        // const k = 10;
+        // // k = 11;
+
+        // console.log(k);
+
+        // var j = 0;
+        // // while(j<arr.length){
+        // //     console.log(arr[j]);
+        // //     j++;
+        // // }
+        // do{
+        //     console.log(arr[j]);
+        //     j++;
+        // }while(j<arr.length);
+
+
+    </script>
+</body>
+
+</html>
